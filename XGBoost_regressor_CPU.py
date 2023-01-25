@@ -11,15 +11,13 @@ Dataset: Computer Hardware Data Set: Medidas del rendimiento relativo y las cara
 
 #%% Librerías 
 import pandas as pd
-from xgboost import plot_tree
-from graphviz import Source
+# from xgboost import plot_tree
+# from graphviz import Source
 import matplotlib.pyplot as plt
 import numpy as np
 
 from xgboost import XGBRegressor
-
-from xgboost import XGBClassifier
-print("Documentación de XGBRegressor")
+print("Documentación de XGBRegressor:\n")
 print(XGBRegressor.__doc__)
 from sklearn.metrics import mean_squared_error as MSE
 from sklearn.model_selection import train_test_split
@@ -27,20 +25,11 @@ from sklearn import metrics
 from sklearn.model_selection import GridSearchCV
 
 
-def decorador_tiempo(func):
-    def envoltorio(x):
-        t1 = time.time()
-        res = func(x)
-        t2 = time.time()
-        print("tiempo transcurrido: ", t2-t1)
-        return res
-    return envoltorio
-
 
 #%% Lectura de los datos 
 print("-"*50)
 print("Lectura de datos: \n")
-data = pd.read_csv("Proyecto/cpus.txt",delimiter = "\s+",index_col=False)
+data = pd.read_csv("cpus.txt",delimiter = "\s+",index_col=False)
 print(data.head())
 
 
