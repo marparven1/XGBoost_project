@@ -18,6 +18,7 @@ import numpy as np
 
 from xgboost import XGBRegressor
 
+from xgboost import XGBClassifier
 print("Documentación de XGBRegressor")
 print(XGBRegressor.__doc__)
 from sklearn.metrics import mean_squared_error as MSE
