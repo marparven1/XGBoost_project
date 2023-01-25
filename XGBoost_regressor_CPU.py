@@ -6,7 +6,7 @@ Primer utilizamos el modelo de skleran de XGBoost para regresión
 Dataset: Computer Hardware Data Set: Medidas del rendimiento relativo y las características de 209 CPUs
 @author: Marta Venegas
 """
-
+#
 # CONJUNTO DE DATOS: cpus.txt
 
 #%% Librerías 
